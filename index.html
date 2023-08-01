@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive NavBar Theme</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<nav class="sidebar locked">
+		<div class="logo-items flex">
+			<span class="nav-image">
+				<img src="https://img.icons8.com/stencil/opened-folder.png"/>
+			</span>
+			<span class="nav-name">
+				NvbrThm
+			</span>
+			<i class="fa-solid fa-lock" id="lock-button"></i>
+			<i class="fa-solid fa-x" id="sidebar-closer"></i>
+		</div>
+		
+		<div class="menu-conteiner">
+			<div class="menu-items">
+				<div class="menu-title flex">
+					<span class="title">Dashboard</span>
+					<span class="line"></span>
+				</div>
+				<ul class="menu-item">
+					<li class="item flex">
+						<a href="#" class="link flex">
+							<i class="fa-solid fa-home"></i>
+							<span class="subtitle">Overview</span>
+						</a>
+					</li>
+					<li class="item flex">
+						<a href="#" class="link flex">
+							<i class="fa-solid fa-list-check"></i>
+							<span class="subtitle">All Projects</span>
+						</a>
+					</li>
+				</ul>
+				<div class="menu-title flex">
+					<span class="title">Editor</span>
+					<span class="line"></span>
+				</div>
+				<ul class="menu-item">
+					<li class="item flex">
+						<a href="#" class="link flex">
+							<i class="fa-solid fa-wand-magic-sparkles"></i>
+							<span class="subtitle">Magic Build</span>
+						</a>
+					</li>
+					<li class="item flex">
+						<a href="#" class="link flex">
+							<i class="fa-solid fa-file-circle-plus"></i>
+							<span class="subtitle">New Project</span>
+						</a>
+					</li>
+					<li class="item flex">
+						<a href="#" class="link flex">
+							<i class="fa-solid fa-file-import"></i>
+							<span class="subtitle">Upload Project</span>
+						</a>
+					</li>
+				</ul>
+				<div class="menu-title flex">
+					<span class="title">Settings</span>
+					<span class="line"></span>
+				</div>
+				<ul class="menu-item">
+					<li class="item flex">
+						<a href="#" class="link flex">
+							<i class="fa-solid fa-flag"></i>
+							<span class="subtitle">Notice Board</span>
+						</a>
+					</li>
+					<li class="item flex">
+						<a href="#" class="link flex">
+							<i class="fa-solid fa-award"></i>
+							<span class="subtitle">Awards</span>
+						</a>
+					</li>
+					<li class="item flex">
+						<a href="#" class="link flex">
+							<i class="fa-solid fa-gear"></i>
+							<span class="subtitle">Settings</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="sidebar-profile flex">
+				<span class="nav-image">
+					<img src="https://img.icons8.com/doodle/user.png"/>
+				</span>
+				<div class="data-text">
+					<span class="name">Emirhan</span> <br/>
+					<span class="email">emirhan@celebi.dev</span>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="navbar flex">
+		<i class="fa-solid fa-bars" id="sidebar-opener"></i>
+		<input type="text" class="search-box" placeholder="Search">
+		<span class="nav-image">
+			<img src="https://img.icons8.com/doodle/user.png"/>
+		</span>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
