@@ -9,8 +9,6 @@
 }
 
 body {
-  background-color: #0d1b2a;
-  color: #E0E1DD;
   min-height: 100dvh;
 }
 
@@ -27,7 +25,6 @@ body {
   height: 100dvh;
   overflow-y: auto;
   width: 20%;
-  background: #1b263b;
   transition: 0.3s ease all;
 }
 
@@ -37,13 +34,11 @@ body {
 .logo-items #lock-button, .logo-items #sidebar-closer {
   margin-left: auto;
   cursor: pointer;
-  color: #415A77;
 }
 .logo-items #sidebar-closer {
   display: none;
 }
 .logo-items .nav-name {
-  color: #778DA9;
   font-weight: bolder;
   margin: 0 0.5rem;
   overflow: hidden;
@@ -62,14 +57,12 @@ body {
   position: relative;
   height: 3em;
   font-size: 1.4em;
-  color: #778DA9;
 }
 .menu-title .line {
   position: absolute;
   height: 3px;
   width: 1.5em;
   margin: 0 0.5em;
-  background: #778DA9;
   display: none;
 }
 
@@ -78,12 +71,8 @@ body {
 }
 .item a {
   text-decoration: none;
-  color: #E0E1DD;
   font-size: 1.2em;
   margin: 0.7em 0;
-}
-.item a:hover {
-  color: #778DA9;
 }
 .item a i {
   margin: 0 0.5em;
@@ -95,8 +84,6 @@ body {
 
 .sidebar-profile {
   margin-top: 3em;
-  border: 2px solid #415A77;
-  border-radius: 1em;
   padding: 1em;
   justify-content: center;
 }
@@ -113,7 +100,6 @@ body {
   width: 80%;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: #1b263b;
   transition: 0.3s all ease;
 }
 
@@ -129,11 +115,7 @@ body {
   max-width: 750px;
   margin: 0 auto;
   padding: 0.5rem;
-  border: 3px solid #778DA9;
-  border-radius: 1rem;
   font-size: 1.2em;
-  background: #0d1b2a;
-  color: #E0E1DD;
   opacity: 0.75;
 }
 
@@ -191,8 +173,57 @@ body {
   bottom: 1rem;
   right: 1rem;
   font-size: 1.3rem;
-  background: #1b263b;
-  color: #778DA9;
   border-radius: 1rem;
   padding: 0.3em;
+}
+
+body {
+  background-color: #0d1b2a;
+  color: #E0E1DD;
+}
+
+.sidebar {
+  background: #1b263b;
+}
+
+.logo-items #lock-button, .logo-items #sidebar-closer {
+  color: #415A77;
+}
+.logo-items .nav-name {
+  color: #778DA9;
+}
+
+.menu-title {
+  color: #778DA9;
+}
+.menu-title .line {
+  background: #778DA9;
+}
+
+.item a {
+  color: #E0E1DD;
+}
+.item a:hover {
+  color: #778DA9;
+}
+
+.sidebar-profile {
+  border: 2px solid #415A77;
+  border-radius: 1em;
+}
+
+.navbar {
+  background: #1b263b;
+}
+
+.search-box {
+  border: 3px solid #778DA9;
+  border-radius: 1rem;
+  background: #0d1b2a;
+  color: #E0E1DD;
+}
+
+#themer {
+  background: #1b263b;
+  color: #778DA9;
 }/*# sourceMappingURL=dark.css.map */

@@ -1,7 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap')
-// @import "./theme/light"
-@import "./theme/dark"
 
 *
 	margin: 0
@@ -10,8 +8,6 @@
 	font-family: 'Space Grotesk', sans-serif
 
 body
-	background-color: $first
-	color: $fifth
 	min-height: 100dvh
 
 .flex
@@ -26,7 +22,6 @@ body
 	height: 100dvh
 	overflow-y: auto
 	width: 20%
-	background: $second
 	transition: .3s ease all
 
 .logo-items
@@ -35,12 +30,10 @@ body
 	#lock-button, #sidebar-closer
 		margin-left: auto
 		cursor: pointer
-		color: $third
 	#sidebar-closer
 		display: none
 		
 	.nav-name
-		color: $fourth
 		font:
 			weight: bolder
 		margin: 0 .5rem
@@ -57,25 +50,19 @@ body
 	position: relative
 	height: 3em
 	font-size: 1.4em
-	color:  $fourth
 	.line
 		position: absolute
 		height: 3px
 		width: 1.5em
 		margin: 0 .5em
-		background: $fourth
 		display: none
 
 .item
 	list-style: none
 	a
 		text-decoration: none
-		color: $fifth
-		font:
-			size: 1.2em
+		font-size: 1.2em
 		margin: .7em 0
-		&:hover
-			color: $fourth
 		i
 			margin: 0 .5em
 			font-size: 1.3em
@@ -85,13 +72,9 @@ body
 .sidebar-profile
 	margin-top: 3em
 	.name
-		font:
-			size: 2em
+		font-size: 2em
 	.email
-		font:
-			size: 1.1em
-	border: 2px solid $third
-		radius: 1em
+		font-size: 1.1em
 	padding: 1em
 	justify-content: center
 	// overflow: hidden
@@ -102,7 +85,6 @@ body
 	width: 80%
 	justify-content: space-between
 	padding: 1rem 2rem
-	background: $second
 	transition: .3s all ease
 
 #sidebar-opener
@@ -117,12 +99,8 @@ body
 	max-width: 750px
 	margin: 0 auto
 	padding: .5rem
-	border: 3px solid $fourth
-		radius: 1rem
 	font:
 		size: 1.2em
-	background: $first
-	color: $fifth
 	opacity: .75
 
 
@@ -170,7 +148,5 @@ body
 	right: 1rem
 	font:
 		size: 1.3rem
-	background: $second
-	color: $fourth
 	border-radius: 1rem
 	padding: .3em
