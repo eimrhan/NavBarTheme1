@@ -27,6 +27,17 @@ const mobileSideBar = () => {
 	navbar.classList.remove("collapse")
 }
 
+document.onclick = (e) => {
+	const isSidebarChild = sidebar.contains(e.target)
+
+	if (e.target !== sidebar
+		&& !isSidebarChild
+		&& e.target !== sidebarOpener
+		&& sidebar.classList.contains("mobile")) {
+		mobileSideBar()
+	}
+}
+
 const handleResize = () => {
   if (window.innerWidth > 1024)  {
     sidebar.classList.remove("mobile")

@@ -20,7 +20,7 @@ body
 	top: 0
 	left: 0
 	height: 100dvh
-	overflow-y: auto
+	overflow-y: hidden
 	width: 20%
 	transition: .3s ease all
 
@@ -44,7 +44,6 @@ body
 
 .menu-conteiner
 	margin-top: 2em
-	overflow-y: auto
 
 .menu-title
 	position: relative
@@ -59,6 +58,7 @@ body
 
 .item
 	list-style: none
+	overflow: hidden
 	a
 		text-decoration: none
 		font-size: 1.2em
@@ -68,6 +68,8 @@ body
 			font-size: 1.3em
 		span
 			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
 
 .sidebar-profile
 	margin-top: 3em
@@ -77,7 +79,7 @@ body
 		font-size: 1.1em
 	padding: 1em
 	justify-content: center
-	// overflow: hidden
+	overflow: hidden
 
 .navbar
 	position: fixed
@@ -86,6 +88,8 @@ body
 	justify-content: space-between
 	padding: 1rem 2rem
 	transition: .3s all ease
+	.nav-image
+		margin-left: 1rem
 
 #sidebar-opener
 	display: none
@@ -97,6 +101,7 @@ body
 .search-box
 	width: 100vw
 	max-width: 750px
+	min-width: 100px
 	margin: 0 auto
 	padding: .5rem
 	font:
@@ -137,10 +142,15 @@ body
 		transition: .3s all ease
 	.sidebar.mobile
 		left: 0
-		width: 80%
+		width: 60%
 		z-index: 1
 	#themer
 		display: none
+
+@media screen and ( max-width: 576px )
+	.sidebar.mobile
+		width: 100%
+
 
 #themer
 	position: fixed

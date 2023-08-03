@@ -23,7 +23,7 @@ body {
   top: 0;
   left: 0;
   height: 100dvh;
-  overflow-y: auto;
+  overflow-y: hidden;
   width: 20%;
   transition: 0.3s ease all;
 }
@@ -50,7 +50,6 @@ body {
 
 .menu-conteiner {
   margin-top: 2em;
-  overflow-y: auto;
 }
 
 .menu-title {
@@ -68,6 +67,7 @@ body {
 
 .item {
   list-style: none;
+  overflow: hidden;
 }
 .item a {
   text-decoration: none;
@@ -80,12 +80,15 @@ body {
 }
 .item a span {
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sidebar-profile {
   margin-top: 3em;
   padding: 1em;
   justify-content: center;
+  overflow: hidden;
 }
 .sidebar-profile .name {
   font-size: 2em;
@@ -102,6 +105,9 @@ body {
   padding: 1rem 2rem;
   transition: 0.3s all ease;
 }
+.navbar .nav-image {
+  margin-left: 1rem;
+}
 
 #sidebar-opener {
   display: none;
@@ -113,6 +119,7 @@ body {
 .search-box {
   width: 100vw;
   max-width: 750px;
+  min-width: 100px;
   margin: 0 auto;
   padding: 0.5rem;
   font-size: 1.2em;
@@ -161,11 +168,16 @@ body {
   }
   .sidebar.mobile {
     left: 0;
-    width: 80%;
+    width: 60%;
     z-index: 1;
   }
   #themer {
     display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sidebar.mobile {
+    width: 100%;
   }
 }
 #themer {
