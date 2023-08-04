@@ -67,6 +67,7 @@ body {
 
 .item {
   list-style: none;
+  display: block;
   overflow: hidden;
 }
 .item a {
