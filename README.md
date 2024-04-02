@@ -5,7 +5,7 @@
 
 ---
 
-###### functions it includes:
+#### functions it includes:
 
 * lock/unlock sidebar
 * collapse/uncollapse sidebar with mouse events when unlocked
